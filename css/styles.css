@@ -1,33 +1,185 @@
-h1 {
-    font-family: "Montserrat";
-    font-weight: 900;
-    font-size: 5em;
+/* variables */
+
+:root {
+    --color-accent: #cc0404;
+    --color-accent-light: #cc040433;
+    --color-background: #112240;
+    --color-content: #8892b0;
+    --color-title: #ccd6f6;
+    --font-sans: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+        -apple-system, system-ui, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --font-xxs: 12px;
+    --font-xs: 13px;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 20px;
+    --font-xxl: 22px;
+    --font-heading: 32px;
+    --nav-link-margin: 1em;
 }
 
-h3 {
-    font-family: "Montserrat";
+/* fonts */
+
+@font-face {
+    font-family: "Calibre";
+    src: url("../fonts/Calibre-Regular.ttf") format("truetype"),
+        url("../fonts/Calibre-Regular.woff") format("woff"),
+        url("../fonts/Calibre-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url("../fonts/Calibre-Medium.ttf") format("truetype"),
+        url("../fonts/Calibre-Medium.woff") format("woff"),
+        url("../fonts/Calibre-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Calibre";
+    src: url("../fonts/Calibre-Semibold.ttf") format("truetype"),
+        url("../fonts/Calibre-Semibold.woff") format("woff"),
+        url("../fonts/Calibre-Semibold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("../fonts/SFMono-Regular.ttf") format("truetype"),
+        url("../fonts/SFMono-Regular.woff") format("woff"),
+        url("../fonts/SFMono-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("../fonts/SFMono-Medium.ttf") format("truetype"),
+        url("../fonts/SFMono-Medium.woff") format("woff"),
+        url("../fonts/SFMono-Medium.woff2") format("woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("../fonts/SFMono-Semibold.ttf") format("truetype"),
+        url("../fonts/SFMono-Semibold.woff") format("woff"),
+        url("../fonts/SFMono-Semibold.woff2") format("woff2");
+    font-weight: 600;
+}
+
+/* generic and full-page styles */
+
+body {
+    font-size: var(--font-xl);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-title);
+    font-weight: 600;
+    line-height: 1.1;
+    margin: 0px 0px 10px;
+}
+
+h1 {
+    font-size: clamp(40px, 8vw, 72px);
     font-weight: 700;
-    font-size: 2em;
 }
 
 p {
-    font-family: "Montserrat";
-    font-weight: 500;
+    color: var(--color-content);
+    font-family: var(--font-sans);
+    font-weight: normal;
 }
 
 a {
-    font-family: "Montserrat";
-    font-weight: 500;
+    color: var(--color-title);
+    font-family: var(--font-sans);
+    font-weight: normal;
 }
 
-.emphasis-text {
-    color: blue;
+#full-page {
+    background-color: var(--color-background);
 }
 
-#name {
-    color: #D6DBDF;
+.content {
+    padding: 5% 15% 25%;
+}
+
+/* navbar styles */
+
+.navbar {
+    padding: 2% 3%;
+}
+
+.navbar-brand {
+    color: var(--color-accent);
+    font-size: var(--font-sm);
+}
+
+.navbar-brand:hover {
+    color: var(--color-accent)
+}
+
+.nav-link {
+    font-size: var(--font-sm);
+}
+
+.nav-link:hover .section-title {
+    color: var(--color-accent);
+}
+
+.nav-link .section-number {
+    margin-left: var(--nav-link-margin);
+}
+
+.section-number {
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-weight: normal;
+}
+
+.section-title {
+    color: var(--color-title);
+    font-family: var(--font-mono);
+}
+
+#resume-button {
+    border: 1px solid var(--color-accent);
+    border-radius: 5px;
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    margin-left: var(--nav-link-margin);
+    padding: 0.75rem 1rem;
+}
+
+#resume-button:hover {
+    background-color: var(--color-accent-light);
+}
+
+/* intro styes */
+
+#welcome {
+    color: var(--color-accent);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--font-sm), 5vw, var(--font-md));
+    font-weight: normal;
 }
 
 #statement {
-    color: #AEB6BF;
+    color: var(--color-content);
+}
+
+/* reference page styles */
+
+.apa-reference {
+    padding-left: 36px;
+    text-indent: -36px;
 }

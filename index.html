@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>David Crow</title>
 
-        <!-- Google Fonts -->
+<head>
+    <title>David Crow</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap"
-            rel="stylesheet"
-        />
+    <!-- CSS Stylesheets -->
 
-        <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
 
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-            crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="css/styles.css" />
-    </head>
-    <body>
-        <!-- Header and Welcome -->
+<body id="full-page">
+    <!-- Header and Welcome -->
 
-        <section>
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="">DC</a>
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#about">About</a>
-                        <a class="nav-link" href="#experience">Experience</a>
-                        <a class="nav-link" href="#projects">Projects</a>
-                        <a class="nav-link" href="#education">Education</a>
-                        <a class="nav-link" href="#publications">Research</a>
-                        <a class="nav-link" href="#contact">Contact</a>
-                        <button type="button" class="btn btn-outline-primary">
-                            <a href="./uploads/resume.pdf">Resume</a>
-                        </button>
-                    </div>
+    <section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">DC</a>
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#about">
+                        <p class="section-number">01.
+                            <span class="section-title">About</span>
+                        </p>
+                    </a>
+                    <a class="nav-link" href="#experience">
+                        <p class="section-number">02.
+                            <span class="section-title">Experience</span>
+                        </p>
+                    </a>
+                    <a class="nav-link" href="#academics">
+                        <p class="section-number">03.
+                            <span class="section-title">Academics</span>
+                        </p>
+                    </a>
+                    <a class="nav-link" href="#contact">
+                        <p class="section-number">04.
+                            <span class="section-title">Contact</span>
+                        </p>
+                    </a>
+                    <a class="nav-link" href="./static/resume.pdf"><span id="resume-button">Resume</span></a>
                 </div>
-            </nav>
-            <div>
-                <p>Hi. My name is</p>
-                <h1 id="name">David Crow.</h1>
-                <h1 id="statement">I like to build things.</h1>
-                <p>
-                    I'm seeking employment as a software engineer in Seattle,
-                    Washington. Currently, I work as a Cyberspace Operations
-                    Officer for the US Air Force; I'll leave this role in August
-                    2023.
-                </p>
             </div>
-        </section>
+        </nav>
+        <div class="content">
+            <p id="welcome">Hi. My name is</p>
+            <h1 id="name">David Crow.</h1>
+            <h1 id="statement">I like to build things.</h1>
+            <p>
+                I'm seeking employment as a software engineer in Seattle,
+                Washington. Currently, I work as a Cyberspace Operations
+                Officer for the US Air Force; I'll leave this role in August
+                2023.
+            </p>
+        </div>
+    </section>
 
-        <!-- About Me -->
+    <!-- About Me -->
 
-        <section id="about">
+    <section id="about" class="content">
+        <div>
+            <h3><span class="section-number">01. </span>About Me</h3>
+            <p>
+                Hello! I'm David. I enjoy solving problems and building
+                things. Currently, I work for the US Air Force. In my role,
+                I lead red team engagements, conduct penetration tests, and
+                develop offensive cybersecurity tools.
+            </p>
+            <p>
+                Although I work in cybersecurity right now, my background is
+                in software engineering. I studied Computer Science for both
+                my Bachelor's and my Master's; throughout my studies and my
+                internships, I most enjoyed writing code. In my free time, I
+                like to solve programming challenges, like those from Advent
+                of Code or Project Euler, and construct various pieces of
+                software.
+            </p>
+            <p>
+                I'm proud of my time in the Air Force, but I'm also ready
+                for the next step of my career.
+            </p>
+        </div>
+    </section>
+
+    <!-- Work Experience & Personal Projects -->
+
+    <section id="experience" class="content">
+        <div>
+            <h3><span class="section-number">02. </span>Work & Projects</h3>
             <div>
-                <h3>About Me</h3>
-                <p>
-                    Hello! I'm David. I enjoy solving problems and building
-                    things. Currently, I work for the US Air Force. In my role, I lead
-                    red team engagements, conduct penetration tests, and develop
-                    offensive cybersecurity tools.
-                </p>
-                <p>
-                    Although I work in cybersecurity right now, my background is
-                    in software engineering. I studied Computer Science for both
-                    my Bachelor's and my Master's; throughout my studies and my
-                    internships, I most enjoyed writing code. In my free time, I
-                    like to solve programming challenges, like those from Advent
-                    of Code or Project Euler, and construct various pieces of
-                    software.
-                </p>
-                <p>
-                    I'm proud of my time in the Air Force, but I'm also ready
-                    for the next step of my career.
-                </p>
-            </div>
-        </section>
-
-        <!-- Work Experience -->
-
-        <section>
-            <div>
-                <h3 id="experience">Work Experience</h3>
+                <h4>Work Experience</h4>
                 <div>
                     <p class="emphasis-text">Cyber Aggressor @ US Air Force</p>
                     <p>Nov 2020 - Present</p>
@@ -196,13 +199,8 @@
                     </p>
                 </div>
             </div>
-        </section>
-
-        <!-- Personal Projects -->
-
-        <section>
             <div>
-                <h3 id="projects">Personal Projects</h3>
+                <h4>Personal Projects</h4>
                 <div>
                     <p class="emphasis-text">Competitive Programming</p>
                     <p>Mar 2021 - Present</p>
@@ -243,114 +241,105 @@
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Education -->
+    <!-- Education & Research -->
 
-        <section>
+    <section id="academics" class="content">
+        <h3>
+            <span class="section-number">03. </span>Education & Research
+        </h3>
+        <div>
+            <h4>Educational History</h4>
             <div>
-                <h3 id="education">Educational History</h3>
-                <div>
-                    <p class="emphasis-text">
-                        Air Force Institute of Technology
-                    </p>
-                    <p>
-                        MS Computer Science, Emphasis in Artificial Intelligence
-                    </p>
-                    <p>Oct 2018 - Mar 2020</p>
-                    <p>
-                        - Graduated with 4.00 GPA as #1 student in department;
-                        awarded Distinguished Graduate for top performance.
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Missouri University of Science and Technology
-                    </p>
-                    <p>BS Computer Science, Minor in Mathematics</p>
-                    <p>Aug 2014 - May 2018</p>
-                    <p>
-                        - Graduated summa cum laude with 3.90 GPA; Dean's List
-                        member for all eight semesters.
-                    </p>
-                </div>
+                <p class="emphasis-text">
+                    Air Force Institute of Technology
+                </p>
+                <p>
+                    MS Computer Science, Emphasis in Artificial Intelligence
+                </p>
+                <p>Oct 2018 - Mar 2020</p>
+                <p>
+                    - Graduated with 4.00 GPA as #1 student in department;
+                    awarded Distinguished Graduate for top performance.
+                </p>
             </div>
-        </section>
-
-        <!-- Publications -->
-
-        <section>
             <div>
-                <h3 id="publications">Published Research</h3>
-                <div>
-                    <p class="emphasis-text">
-                        Engaging Empirical Dynamic Modeling to Detect Intrusions
-                        in Cyber-Physical SystemsEngaging Empirical Dynamic
-                        Modeling to Detect Intrusions in Cyber-Physical Systems
-                    </p>
-                    <p>Critical Infrastructure Protection XIV</p>
-                    <p>Dec 1, 2020</p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Cyber-Physical System Intrusion: A Case Study of
-                        Automobile Identification Vulnerabilities and Automated
-                        Approaches for Intrusion DetectionCyber-Physical System
-                        Intrusion: A Case Study of Automobile Identification
-                        Vulnerabilities and Automated Approaches for Intrusion
-                        Detection
-                    </p>
-                    <p>Defense Technical Information Center</p>
-                    <p>Mar 1, 2020</p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Empirical Dynamic Modeling as a Basis for an Intrusion
-                        Detection SystemEmpirical Dynamic Modeling as a Basis
-                        for an Intrusion Detection System
-                    </p>
-                    <p>
-                        Fourteenth IFIP Working Group 11.10 International
-                        Conference on Critical Infrastructure Protection
-                    </p>
-                    <p>Mar 1, 2020</p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Fingerprinting Vehicles With CAN Bus Data
-                        SamplesFingerprinting Vehicles With CAN Bus Data Samples
-                    </p>
-                    <p>
-                        15th International Conference on Cyber Warfare and
-                        Security
-                    </p>
-                    <p>Mar 1, 2020</p>
-                </div>
+                <p class="emphasis-text">
+                    Missouri University of Science and Technology
+                </p>
+                <p>BS Computer Science, Minor in Mathematics</p>
+                <p>Aug 2014 - May 2018</p>
+                <p>
+                    - Graduated summa cum laude with 3.90 GPA; Dean's List
+                    member for all eight semesters.
+                </p>
             </div>
-        </section>
+        </div>
+        <div>
+            <h4>Published Research</h4>
+            <p class="apa-reference">
+                Crow, D. R.
+                <em>Cyber-physical system intrusion: a case study of
+                    automobile identification vulnerabilities and automated
+                    approaches for intrusion detection</em>
+                (Document No. AD1102913). [Master's thesis, Air Force
+                Institute of Technology]. Defense Technical Information
+                Center.
+            </p>
+            <p class="apa-reference">
+                Crow, D. R., Graham, S. R., & Borghetti, B. J. (2020).
+                Fingerprinting vehicles with CAN bus data samples. In B.
+                Payne & H. Wu (Eds.),
+                <em>Proceedings of the 15th International Conference on
+                    Cyber Warfare and Security</em>
+                (pp. 110-118). Academic Conferences and Publishing
+                International.
+            </p>
+            <p class="apa-reference">
+                Crow, D. R., Graham, S. R., Borghetti, B. J., & Sweeney, P.
+                J. (2020).
+                <em>Empirical dynamic modeling as a basis for an intrusion
+                    detection system</em>
+                [Paper presentation]. Fourteenth IFIP Working Group 11.10
+                International Conference on Critical Infrastructure
+                Protection, Arlington, Virginia.
+            </p>
+            <p class="apa-reference">
+                Crow, D. R., Graham, S. R., Borghetti, B. J., & Sweeney, P.
+                J. (2020). Engaging empirical dynamic modeling to detect
+                intrusions in cyber-physical systems. In J. Staggs & S.
+                Shenoi (Eds.),
+                <em>Critical Infrastructure Protection XIV</em> (pp.
+                111-133). Springer.
+            </p>
+        </div>
+    </section>
 
-        <!-- Contact Information -->
+    <!-- Contact Information -->
 
-        <section>
-            <div>
-                <h3 id="contact">Contact Me</h3>
-                <a href="mailto:davidrheacrow@gmail.com">
-                    <p>Hi! Reach out to me!</p>
-                </a>
-            </div>
-        </section>
+    <section id="contact" class="content">
+        <div>
+            <h3><span class="section-number">04. </span>Contact Me</h3>
+            <a href="mailto:contact@davidrheacrow.com">
+                Hi! Reach out to me!
+            </a>
+        </div>
+    </section>
 
-        <!-- footer -->
+    <!-- footer -->
 
-        <footer>
-            <ul>
-                <li><a href="https://github.com/david-crow">GitHub</a></li>
-                <li>
-                    <a href="https://www.linkedin.com/in/davidrheacrow/"
-                        >LinkedIn</a
-                    >
-                </li>
-            </ul>
-        </footer>
-    </body>
+    <footer>
+        <ul>
+            <li><a href="https://github.com/david-crow">GitHub</a></li>
+            <li>
+                <a href="https://www.linkedin.com/in/davidrheacrow/">LinkedIn</a>
+            </li>
+            <li><a href="https://brittanychiang.com/">Design influenced by Brittany Chiang</a></li>
+            <li><a href="https://github.com/david-crow/david-crow.github.io">Built by David Crow</a></li>
+        </ul>
+    </footer>
+</body>
+
 </html>

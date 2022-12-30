@@ -1,345 +1,332 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>David Crow</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
 
-<head>
-    <title>David Crow</title>
-
-    <!-- CSS Stylesheets -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css" />
-</head>
-
-<body id="full-page">
-    <!-- Header and Welcome -->
-
-    <section>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="">DC</a>
-                <div class="navbar-nav">
-                    <a class="nav-link" href="#about">
-                        <p class="section-number">01.
-                            <span class="section-title">About</span>
-                        </p>
-                    </a>
-                    <a class="nav-link" href="#experience">
-                        <p class="section-number">02.
-                            <span class="section-title">Experience</span>
-                        </p>
-                    </a>
-                    <a class="nav-link" href="#academics">
-                        <p class="section-number">03.
-                            <span class="section-title">Academics</span>
-                        </p>
-                    </a>
-                    <a class="nav-link" href="#contact">
-                        <p class="section-number">04.
-                            <span class="section-title">Contact</span>
-                        </p>
-                    </a>
-                    <a class="nav-link" href="./static/resume.pdf"><span id="resume-button">Resume</span></a>
-                </div>
-            </div>
-        </nav>
-        <div class="content">
-            <p id="welcome">Hi. My name is</p>
-            <h1 id="name">David Crow.</h1>
-            <h1 id="statement">I like to build things.</h1>
-            <p>
-                I'm seeking employment as a software engineer in Seattle,
-                Washington. Currently, I work as a Cyberspace Operations
-                Officer for the US Air Force; I'll leave this role in August
-                2023.
-            </p>
-        </div>
-    </section>
-
-    <!-- About Me -->
-
-    <section id="about" class="content">
-        <div>
-            <h3><span class="section-number">01. </span>About Me</h3>
-            <p>
-                Hello! I'm David. I enjoy solving problems and building
-                things. Currently, I work for the US Air Force. In my role,
-                I lead red team engagements, conduct penetration tests, and
-                develop offensive cybersecurity tools.
-            </p>
-            <p>
-                Although I work in cybersecurity right now, my background is
-                in software engineering. I studied Computer Science for both
-                my Bachelor's and my Master's; throughout my studies and my
-                internships, I most enjoyed writing code. In my free time, I
-                like to solve programming challenges, like those from Advent
-                of Code or Project Euler, and construct various pieces of
-                software.
-            </p>
-            <p>
-                I'm proud of my time in the Air Force, but I'm also ready
-                for the next step of my career.
-            </p>
-        </div>
-    </section>
-
-    <!-- Work Experience & Personal Projects -->
-
-    <section id="experience" class="content">
-        <div>
-            <h3><span class="section-number">02. </span>Work & Projects</h3>
-            <div>
-                <h4>Work Experience</h4>
-                <div>
-                    <p class="emphasis-text">Cyber Aggressor @ US Air Force</p>
-                    <p>Nov 2020 - Present</p>
-                    <p>Las Vegas, NV</p>
-                    <p>
-                        - Developed robust password-cracker (Python), Microsoft
-                        Office exploit (VBA), wiper malware (Bash)
-                    </p>
-                    <p>
-                        - Research target weapons system,
-                        construct/test/evaluate/execute tactical plans to
-                        exploit the system
-                    </p>
-                    <p>
-                        - Interface with customer, build strategic plans, lead
-                        Operators during planning/execution, write reports
-                    </p>
-                    <p>
-                        - Supervise subordinates, provide peer mentorship,
-                        administer organization-level programs
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Cyber Warfare Training Student @ US Air Force
-                    </p>
-                    <p>Apr 2020 - Nov 2020</p>
-                    <p>Biloxi, Mississippi</p>
-                    <p>
-                        - Honed skills in scripting, cybersecurity fundamentals,
-                        computer networking, and cyber attack/defense
-                    </p>
-                    <p>
-                        - Studied various topics in military cyberspace,
-                        including law, warfare, and the role of Air Force cyber
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">Master's Student @ US Air Force</p>
-                    <p>Jul 2018 - Mar 2020</p>
-                    <p>Dayton, Ohio</p>
-                    <p>
-                        - Earned an MS in Computer Science (with an emphasis in
-                        AI/ML) at the Air Force Institute of Technology
-                    </p>
-                    <p>
-                        - Presented cyber-focused research at two international
-                        conferences for critical infrastructure protection
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Teacher's Assistant @ Missouri S&T
-                    </p>
-                    <p>Jan 2016 - May 2018</p>
-                    <p>Rolla, Missouri</p>
-                    <p>
-                        - Assisted students in programming lab with
-                        understanding and completion of various assignments
-                    </p>
-                    <p>
-                        - Graded and provided notes on forty medium-scale (i.e.,
-                        1-2k lines) C++ programs each week
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Software Engineer Intern @ Cerner
-                    </p>
-                    <p>May 2017 - Aug 2017</p>
-                    <p>Kansas City, Missouri</p>
-                    <p>
-                        - Implemented notification center to improve patient
-                        scheduling, testing, and timekeeping in JavaScript
-                    </p>
-                    <p>
-                        - Drove linting/compilation/execution performance
-                        improvements for in-house Python and Java tools
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">
-                        Software Engineer Intern @ Garmin
-                    </p>
-                    <p>Mar 2015 - Dec 2015</p>
-                    <p>Rolla, Missouri</p>
-                    <p>
-                        - Used React + JSX to build the UI and sensor system for
-                        aircraft instrumentation and diagnostic tools
-                    </p>
-                    <p>
-                        - Created the JavaScript-based UI for an in-house,
-                        Tortoise-esque Subversion client
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">Desktop Engineer @ Missouri S&T</p>
-                    <p>Sep 2014 - Mar 2015</p>
-                    <p>Rolla, Missouri</p>
-                    <p>
-                        - Evaluated new software versions in sandbox
-                        environments prior to installing on campus computers
-                    </p>
-                    <p>
-                        - Designed/executed scripts to automate the distribution
-                        of patches and updates to campus computers
-                    </p>
-                </div>
-            </div>
-            <div>
-                <h4>Personal Projects</h4>
-                <div>
-                    <p class="emphasis-text">Competitive Programming</p>
-                    <p>Mar 2021 - Present</p>
-                    <p>
-                        Designed Python solutions to Advent of Code problems;
-                        best performance: finished 410 out of 153,408
-                        participants.
-                    </p>
-                    <p>
-                        Solved math-centric Project Euler problems in Python,
-                        minimizing number of lines and execution time.
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">TBD project</p>
-                    <p>TBD - TBD</p>
-                    <p>
-                        Unsure at this point — currently completing other
-                        projects.
-                    </p>
-                    <p>
-                        Probably a web-based, analytics-focused companion app
-                        for UDisc.
-                    </p>
-                </div>
-                <div>
-                    <p class="emphasis-text">Lines of Action</p>
-                    <p>Jul 2020 - Nov 2020</p>
-                    <p>
-                        Built SwiftUI app using MVVM paradigm to implement
-                        one-/two-player versions of an abstract strategy board
-                        game.
-                    </p>
-                    <p>
-                        Constructed game logic, artificial intelligence agent,
-                        state evaluation algorithm, customizable themes,
-                        animations.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Education & Research -->
-
-    <section id="academics" class="content">
-        <h3>
-            <span class="section-number">03. </span>Education & Research
-        </h3>
-        <div>
-            <h4>Educational History</h4>
-            <div>
-                <p class="emphasis-text">
-                    Air Force Institute of Technology
-                </p>
-                <p>
-                    MS Computer Science, Emphasis in Artificial Intelligence
-                </p>
-                <p>Oct 2018 - Mar 2020</p>
-                <p>
-                    - Graduated with 4.00 GPA as #1 student in department;
-                    awarded Distinguished Graduate for top performance.
-                </p>
-            </div>
-            <div>
-                <p class="emphasis-text">
-                    Missouri University of Science and Technology
-                </p>
-                <p>BS Computer Science, Minor in Mathematics</p>
-                <p>Aug 2014 - May 2018</p>
-                <p>
-                    - Graduated summa cum laude with 3.90 GPA; Dean's List
-                    member for all eight semesters.
-                </p>
-            </div>
-        </div>
-        <div>
-            <h4>Published Research</h4>
-            <p class="apa-reference">
-                Crow, D. R.
-                <em>Cyber-physical system intrusion: a case study of
-                    automobile identification vulnerabilities and automated
-                    approaches for intrusion detection</em>
-                (Document No. AD1102913). [Master's thesis, Air Force
-                Institute of Technology]. Defense Technical Information
-                Center.
-            </p>
-            <p class="apa-reference">
-                Crow, D. R., Graham, S. R., & Borghetti, B. J. (2020).
-                Fingerprinting vehicles with CAN bus data samples. In B.
-                Payne & H. Wu (Eds.),
-                <em>Proceedings of the 15th International Conference on
-                    Cyber Warfare and Security</em>
-                (pp. 110-118). Academic Conferences and Publishing
-                International.
-            </p>
-            <p class="apa-reference">
-                Crow, D. R., Graham, S. R., Borghetti, B. J., & Sweeney, P.
-                J. (2020).
-                <em>Empirical dynamic modeling as a basis for an intrusion
-                    detection system</em>
-                [Paper presentation]. Fourteenth IFIP Working Group 11.10
-                International Conference on Critical Infrastructure
-                Protection, Arlington, Virginia.
-            </p>
-            <p class="apa-reference">
-                Crow, D. R., Graham, S. R., Borghetti, B. J., & Sweeney, P.
-                J. (2020). Engaging empirical dynamic modeling to detect
-                intrusions in cyber-physical systems. In J. Staggs & S.
-                Shenoi (Eds.),
-                <em>Critical Infrastructure Protection XIV</em> (pp.
-                111-133). Springer.
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Information -->
-
-    <section id="contact" class="content">
-        <div>
-            <h3><span class="section-number">04. </span>Contact Me</h3>
-            <a href="mailto:contact@davidrheacrow.com">
-                Hi! Reach out to me!
-            </a>
-        </div>
-    </section>
-
-    <!-- footer -->
-
-    <footer>
-        <ul>
-            <li><a href="https://github.com/david-crow">GitHub</a></li>
+    <body>
+        <ul class="nav">
+            <li><a class="accent nav-logo" href="">DC</a></li>
             <li>
-                <a href="https://www.linkedin.com/in/davidrheacrow/">LinkedIn</a>
+                <a class="accent" href="#about"
+                    >01. <span class="nav-label">About</span></a
+                >
             </li>
-            <li><a href="https://brittanychiang.com/">Design influenced by Brittany Chiang</a></li>
-            <li><a href="https://github.com/david-crow/david-crow.github.io">Built by David Crow</a></li>
+            <li>
+                <a class="accent" href="#experience"
+                    >02. <span class="nav-label">Experience</span></a
+                >
+            </li>
+            <li>
+                <a class="accent" href="#academics"
+                    >03. <span class="nav-label">Academics</span></a
+                >
+            </li>
+            <li>
+                <a class="accent" href="#contact"
+                    >04. <span class="nav-label">Contact</span></a
+                >
+            </li>
+            <li>
+                <a class="accent nav-resume" href="./static/resume.pdf"
+                    >Resume</a
+                >
+            </li>
         </ul>
-    </footer>
-</body>
 
+        <section>
+            <p class="accent" id="intro">Hi. My name is</p>
+            <h1 id="name">David Crow.</h1>
+            <h1>I like to build things.</h1>
+            <p id="mission-statement">
+                I'm seeking employment as a software engineer in Seattle,
+                Washington. Currently, I work as a Cyberspace Operations Officer
+                for the US Air Force; I'll leave this role in August 2023.
+            </p>
+        </section>
+
+        <section id="about">
+            <div>
+                <h3>01. <span class="nav-label">About Me</span></h3>
+                <p>
+                    Hello! I'm David. I enjoy solving problems and building
+                    things. Currently, I work for the US Air Force. In my role,
+                    I lead red team engagements, conduct penetration tests, and
+                    develop offensive cybersecurity tools.
+                </p>
+                <p>
+                    Although I work in cybersecurity right now, my background is
+                    in software engineering. I studied Computer Science for both
+                    my Bachelor's and my Master's; throughout my studies and my
+                    internships, I most enjoyed writing code. In my free time, I
+                    like to solve programming challenges, like those from Advent
+                    of Code or Project Euler, and construct various pieces of
+                    software.
+                </p>
+                <p>
+                    I'm proud of my time in the Air Force, but I'm also ready
+                    for the next step of my career.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div>
+                <h3>02. <span class="nav-label">Work & Projects</span></h3>
+                <div>
+                    <h4>Work Experience</h4>
+                    <div>
+                        <p>Cyber Aggressor @ US Air Force</p>
+                        <p>Nov 2020 - Present</p>
+                        <p>Las Vegas, NV</p>
+                        <p>
+                            - Developed robust password-cracker (Python),
+                            Microsoft Office exploit (VBA), wiper malware (Bash)
+                        </p>
+                        <p>
+                            - Research target weapons system,
+                            construct/test/evaluate/execute tactical plans to
+                            exploit the system
+                        </p>
+                        <p>
+                            - Interface with customer, build strategic plans,
+                            lead Operators during planning/execution, write
+                            reports
+                        </p>
+                        <p>
+                            - Supervise subordinates, provide peer mentorship,
+                            administer organization-level programs
+                        </p>
+                    </div>
+                    <div>
+                        <p>Cyber Warfare Training Student @ US Air Force</p>
+                        <p>Apr 2020 - Nov 2020</p>
+                        <p>Biloxi, Mississippi</p>
+                        <p>
+                            - Honed skills in scripting, cybersecurity
+                            fundamentals, computer networking, and cyber
+                            attack/defense
+                        </p>
+                        <p>
+                            - Studied various topics in military cyberspace,
+                            including law, warfare, and the role of Air Force
+                            cyber
+                        </p>
+                    </div>
+                    <div>
+                        <p>Master's Student @ US Air Force</p>
+                        <p>Jul 2018 - Mar 2020</p>
+                        <p>Dayton, Ohio</p>
+                        <p>
+                            - Earned an MS in Computer Science (with an emphasis
+                            in AI/ML) at the Air Force Institute of Technology
+                        </p>
+                        <p>
+                            - Presented cyber-focused research at two
+                            international conferences for critical
+                            infrastructure protection
+                        </p>
+                    </div>
+                    <div>
+                        <p>Teacher's Assistant @ Missouri S&T</p>
+                        <p>Jan 2016 - May 2018</p>
+                        <p>Rolla, Missouri</p>
+                        <p>
+                            - Assisted students in programming lab with
+                            understanding and completion of various assignments
+                        </p>
+                        <p>
+                            - Graded and provided notes on forty medium-scale
+                            (i.e., 1-2k lines) C++ programs each week
+                        </p>
+                    </div>
+                    <div>
+                        <p>Software Engineer Intern @ Cerner</p>
+                        <p>May 2017 - Aug 2017</p>
+                        <p>Kansas City, Missouri</p>
+                        <p>
+                            - Implemented notification center to improve patient
+                            scheduling, testing, and timekeeping in JavaScript
+                        </p>
+                        <p>
+                            - Drove linting/compilation/execution performance
+                            improvements for in-house Python and Java tools
+                        </p>
+                    </div>
+                    <div>
+                        <p>Software Engineer Intern @ Garmin</p>
+                        <p>Mar 2015 - Dec 2015</p>
+                        <p>Rolla, Missouri</p>
+                        <p>
+                            - Used React + JSX to build the UI and sensor system
+                            for aircraft instrumentation and diagnostic tools
+                        </p>
+                        <p>
+                            - Created the JavaScript-based UI for an in-house,
+                            Tortoise-esque Subversion client
+                        </p>
+                    </div>
+                    <div>
+                        <p>Desktop Engineer @ Missouri S&T</p>
+                        <p>Sep 2014 - Mar 2015</p>
+                        <p>Rolla, Missouri</p>
+                        <p>
+                            - Evaluated new software versions in sandbox
+                            environments prior to installing on campus computers
+                        </p>
+                        <p>
+                            - Designed/executed scripts to automate the
+                            distribution of patches and updates to campus
+                            computers
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <h4>Personal Projects</h4>
+                    <div>
+                        <p>Competitive Programming</p>
+                        <p>Mar 2021 - Present</p>
+                        <p>
+                            Designed Python solutions to Advent of Code
+                            problems; best performance: finished 410 out of
+                            153,408 participants.
+                        </p>
+                        <p>
+                            Solved math-centric Project Euler problems in
+                            Python, minimizing number of lines and execution
+                            time.
+                        </p>
+                    </div>
+                    <div>
+                        <p>TBD project</p>
+                        <p>TBD - TBD</p>
+                        <p>
+                            Unsure at this point — currently completing other
+                            projects.
+                        </p>
+                        <p>
+                            Probably a web-based, analytics-focused companion
+                            app for UDisc.
+                        </p>
+                    </div>
+                    <div>
+                        <p>Lines of Action</p>
+                        <p>Jul 2020 - Nov 2020</p>
+                        <p>
+                            Built SwiftUI app using MVVM paradigm to implement
+                            one-/two-player versions of an abstract strategy
+                            board game.
+                        </p>
+                        <p>
+                            Constructed game logic, artificial intelligence
+                            agent, state evaluation algorithm, customizable
+                            themes, animations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academics">
+            <h3>03. <span class="nav-label">Education & Research</span></h3>
+            <div>
+                <h4>Educational History</h4>
+                <div>
+                    <p>Air Force Institute of Technology</p>
+                    <p>
+                        MS Computer Science, Emphasis in Artificial Intelligence
+                    </p>
+                    <p>Oct 2018 - Mar 2020</p>
+                    <p>
+                        - Graduated with 4.00 GPA as #1 student in department;
+                        awarded Distinguished Graduate for top performance.
+                    </p>
+                </div>
+                <div>
+                    <p>Missouri University of Science and Technology</p>
+                    <p>BS Computer Science, Minor in Mathematics</p>
+                    <p>Aug 2014 - May 2018</p>
+                    <p>
+                        - Graduated summa cum laude with 3.90 GPA; Dean's List
+                        member for all eight semesters.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h4>Published Research</h4>
+                <p class="apa-reference">
+                    Crow, D. R.
+                    <em
+                        >Cyber-physical system intrusion: a case study of
+                        automobile identification vulnerabilities and automated
+                        approaches for intrusion detection</em
+                    >
+                    (Document No. AD1102913). [Master's thesis, Air Force
+                    Institute of Technology]. Defense Technical Information
+                    Center.
+                </p>
+                <p class="apa-reference">
+                    Crow, D. R., Graham, S. R., & Borghetti, B. J. (2020).
+                    Fingerprinting vehicles with CAN bus data samples. In B.
+                    Payne & H. Wu (Eds.),
+                    <em
+                        >Proceedings of the 15th International Conference on
+                        Cyber Warfare and Security</em
+                    >
+                    (pp. 110-118). Academic Conferences and Publishing
+                    International.
+                </p>
+                <p class="apa-reference">
+                    Crow, D. R., Graham, S. R., Borghetti, B. J., & Sweeney, P.
+                    J. (2020).
+                    <em
+                        >Empirical dynamic modeling as a basis for an intrusion
+                        detection system</em
+                    >
+                    [Paper presentation]. Fourteenth IFIP Working Group 11.10
+                    International Conference on Critical Infrastructure
+                    Protection, Arlington, Virginia.
+                </p>
+                <p class="apa-reference">
+                    Crow, D. R., Graham, S. R., Borghetti, B. J., & Sweeney, P.
+                    J. (2020). Engaging empirical dynamic modeling to detect
+                    intrusions in cyber-physical systems. In J. Staggs & S.
+                    Shenoi (Eds.),
+                    <em>Critical Infrastructure Protection XIV</em> (pp.
+                    111-133). Springer.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div>
+                <h3>04. <span class="nav-label">Contact Me</span></h3>
+                <a href="mailto:contact@davidrheacrow.com">
+                    Hi! Reach out to me!
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="https://github.com/david-crow">GitHub</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/davidrheacrow/"
+                        >LinkedIn</a
+                    >
+                </li>
+                <li>
+                    <a href="https://brittanychiang.com/"
+                        >Design influenced by Brittany Chiang</a
+                    >
+                </li>
+                <li>
+                    <a href="https://github.com/david-crow/david-crow.github.io"
+                        >Built by David Crow</a
+                    >
+                </li>
+            </ul>
+        </footer>
+    </body>
 </html>
